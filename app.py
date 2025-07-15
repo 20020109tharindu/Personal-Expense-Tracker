@@ -48,7 +48,7 @@ def get_expenses():
         'category': expense.category,
         'amount': expense.amount,
         'date': expense.date.strftime('%Y-%m-%d')
-    } for expense in expenses])
+    } for expense in expenses])    
 
 
 @app.route('/api/expenses', methods=['POST'])
